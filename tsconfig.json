@@ -1,26 +1,63 @@
+/* eslint-disable jsonc/sort-keys */
 {
   "compilerOptions": {
+    "incremental": true,
+    "target": "es2017",
+
+    "jsx": "preserve",
     "lib": ["dom", "dom.iterable", "esnext"],
-    "allowJs": true,
-    "skipLibCheck": true,
-    "strict": true,
-    "noEmit": true,
-    "esModuleInterop": true,
+
+    // Path aliases
+    "baseUrl": ".",
     "module": "esnext",
     "moduleResolution": "bundler",
+    "paths": {
+      "@/*": ["./src/*"],
+      "~/*": ["./public/*"]
+    },
     "resolveJsonModule": true,
+    // Load types
+    "types": ["node"],
+    "allowJs": true,
+    "checkJs": true,
+    "strict": true,
+    "strictNullChecks": true,
+    "allowUnreachableCode": false,
+    "alwaysStrict": true,
+
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitAny": true,
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "noUncheckedIndexedAccess": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "preserveConstEnums": true,
+    "removeComments": true,
+    "noEmit": true,
+    "outDir": "out",
+    "sourceMap": true,
+
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
     "isolatedModules": true,
-    "jsx": "preserve",
-    "incremental": true,
+    "skipLibCheck": true,
+
+    // Editor support
     "plugins": [
       {
         "name": "next"
       }
-    ],
-    "paths": {
-      "@/*": ["./src/*"]
-    }
+    ]
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
-  "exclude": ["node_modules"]
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".storybook/*.ts",
+    ".next/types/**/*.ts",
+    "**/*.mts"
+  ],
+  "exclude": ["./out/**/*", "./node_modules/**/*"]
 }

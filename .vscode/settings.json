@@ -1,0 +1,30 @@
+{
+  "css.validate": false,
+  "editor.formatOnSave": true,
+  "editor.tabSize": 2,
+  "editor.codeActionsOnSave": {
+    "source.fixAll": "explicit"
+  },
+  "headwind.runOnSave": false,
+  "typescript.preferences.importModuleSpecifier": "non-relative",
+  "workbench.colorCustomizations": {
+    "activityBar.activeBackground": "#243360",
+    "activityBar.background": "#243360",
+    "activityBar.foreground": "#e7e7e7",
+    "activityBar.inactiveForeground": "#e7e7e799",
+    "activityBarBadge.background": "#51742b",
+    "activityBarBadge.foreground": "#e7e7e7",
+    "commandCenter.border": "#e7e7e799",
+    "sash.hoverBorder": "#243360",
+    "statusBar.background": "#243360",
+    "statusBar.foreground": "#e7e7e7",
+    "statusBarItem.hoverBackground": "#243360",
+    "statusBarItem.remoteBackground": "#243360",
+    "statusBarItem.remoteForeground": "#e7e7e7",
+    "titleBar.activeBackground": "#243360",
+    "titleBar.activeForeground": "#e7e7e7",
+    "titleBar.inactiveBackground": "#24336099",
+    "titleBar.inactiveForeground": "#e7e7e799"
+  },
+  "peacock.color": "3B1629"
+}
