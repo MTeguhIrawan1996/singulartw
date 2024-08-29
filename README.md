@@ -1,8 +1,8 @@
 # Next.js + Mantine UI + TypeScript Starter and Boilerplate
 
 <div align="center">
-  <h2>🔋 ts-nextjs-mantine-starter</h2>
-  <p>Next.js + Mantine UI + TypeScript starter packed with useful development features.</p>
+  <h2>🔋 ts-nextjs-tailwindcss-starter</h2>
+  <p>Next.js 14+, Tailwind Css, TypeScript starter packed with useful development features.</p>
   <p>Made by <a href="https://www.onedev.my.id/">OneDev</a></p>
 
 <!-- [![GitHub Repo stars](https://img.shields.io/github/stars/theodorusclarence/ts-nextjs-tailwind-starter)](https://github.com/theodorusclarence/ts-nextjs-tailwind-starter/stargazers)
@@ -11,83 +11,82 @@
 
 </div>
 
-## Features
+### Features
 
-This repository is 🔋 battery packed with:
+Developer experience first, extremely flexible code structure and only keep what you need:
 
-- ⚡️ Next.js 14
-- ⚛️ React 18
-- ✨ TypeScript
-- 💨 Mantine UI V7.10.1 — Configured with CSS Variables to extend the **primary** color
-- 🃏 Jest — Configured for unit testing
-- 📈 Absolute Import and Path Alias — Import components using `@/` prefix
-- 📏 ESLint — Find and fix problems in your code, also will **auto sort** your imports
-- 💖 Prettier — Format your code consistently
-- 🐶 Husky & Lint Staged — Run scripts on your staged files before they are committed
-- 🤖 Conventional Commit Lint — Make sure you & your teammates follow conventional commit
-<!-- - ⏰ Release Please — Generate your changelog by activating the `release-please` workflow
-- 👷 Github Actions — Lint your code on PR -->
-  <!-- - 🚘 Automatic Branch and Issue Autolink — Branch will be automatically created on issue **assign**, and auto linked on PR -->
-  <!-- - 🔥 Snippets — A collection of useful snippets
-- 👀 Default Open Graph — Awesome open graph generated using [og](https://github.com/theodorusclarence/og), fork it and deploy! -->
-- 🗺 Site Map — Automatically generate sitemap.xml
-- 📦 Expansion Pack — Easily install common libraries, additional components, and configs
+- ⚡ [Next.js](https://nextjs.org) with App Router support
+- 🔥 Type checking [TypeScript](https://www.typescriptlang.org)
+- 💎 Integrate with [Tailwind CSS](https://tailwindcss.com)
+- ✅ Strict Mode for TypeScript and React 18
+- ♻️ Type-safe environment variables with T3 Env
+- ⌨️ Form handling with React Hook Form
+- 🔴 Validation library with Zod
+- 📏 Linter with [ESLint](https://eslint.org) (default Next.js, Next.js Core Web Vitals, Tailwind CSS and Airbnb configuration)
+- 💖 Code Formatter with [Prettier](https://prettier.io)
+- 🦊 Husky for Git Hooks
+- 🚫 Lint-staged for running linters on Git staged files
+- 🚓 Lint git commit with Commitlint
+- 📓 Write standard compliant commit messages with Commitizen
+- 💡 Absolute Imports using `@` prefix
+- 🗂 VSCode configuration: Settings
+- 🤖 SEO metadata, Open Graph tags
+- 🗺️ Sitemap.xml and robots.txt
+- ⚙️ [Bundler Analyzer](https://www.npmjs.com/package/@next/bundle-analyzer)
+- 💯 Maximize lighthouse score
 
-<!-- See the 👉 [feature details and changelog](https://github.com/theodorusclarence/ts-nextjs-tailwind-starter/blob/main/CHANGELOG.md) 👈 for more. -->
+Built-in feature from Next.js:
 
-<!-- You can also check all of the **details and demos** on my blog post:
+- ☕ Minify HTML & CSS
+- 💨 Live reload
+- ✅ Cache busting
 
-- [One-stop Starter to Maximize Efficiency on Next.js & Tailwind CSS Projects](https://theodorusclarence.com/blog/one-stop-starter) -->
+### Requirements
 
-## Getting Started
+- Node.js 20+ and npm
 
-### 1. Install dependencies
+### Getting started
 
-It is encouraged to use **yarn** so the husky hooks can work properly.
+Run the following command on your local environment:
 
-```bash
-yarn install
+```shell
+git clone --depth=1 https://github.com/MTeguhIrawan1996/singulartw.git my-project-name
+cd my-project-name
+npm install
 ```
 
-### 2. Run the development server
+Then, you can run the project locally in development mode with live reload by executing:
 
-You can start the server using this command:
-
-```bash
-yarn dev
+```shell
+npm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result. You can start editing the page by modifying `src/app/page.tsx`.
+Open http://localhost:3000 with your favorite browser to see your project.
 
-### 3. Commit Message Commitizen
+### Project structure
 
-This starter is using [Commitizen commits](https://commitizen-tools.github.io/commitizen/), it is mandatory to use it to commit changes.
+```shell
+.
+├── README.md                       # README file
+├── .husky                          # Husky configuration
+├── .vscode                         # VSCode configuration
+├── public                          # Public assets folder
+├── src
+│   ├── app                         # Next JS App (App Router)
+│   ├── components                  # React components
+│   ├── libs                        # 3rd party libraries configuration
+│   ├── styles                      # Styles folder
+│   ├── types                       # Type definitions
+│   └── utils                       # Utilities folder
+├── tailwind.config.js              # Tailwind CSS configuration
+└── tsconfig.json                   # TypeScript configuration
 
-You can start the commit using this command:
-
-```bash
-yarn git:commit
 ```
 
-<!-- ## Projects using ts-nextjs-mantine ui-starter -->
+### Commit Message Format
 
-<!--
-TEMPLATE
-- [sitename](https://sitelink.com) ([Source](https://github.com/githublink))
-- [sitename](https://sitelink.com)
--->
+The project enforces [Conventional Commits](https://www.conventionalcommits.org/) specification. This means that all your commit messages must be formatted according to the specification. To help you write commit messages, the project uses [Commitizen](https://github.com/commitizen/cz-cli), an interactive CLI that guides you through the commit process. To use it, run the following command:
 
-<!-- - [theodorusclarence.com](https://theodorusclarence.com) ([Source](https://github.com/theodorusclarence/theodorusclarence.com))
-- [Notiolink](https://notiolink.thcl.dev/) ([Source](https://github.com/theodorusclarence/notiolink))
-
-Are you using this starter? Please add your page (and repo) to the end of the list via a [Pull Request](https://github.com/theodorusclarence/ts-nextjs-tailwind-starter/edit/main/README.md). 😃 -->
-
-<!-- ## Expansion Pack 📦
-
-This starter is now equipped with an [expansion pack](https://github.com/theodorusclarence/expansion-pack).
-
-You can easily add expansion such as React Hook Form + Components, Storybook, and more just using a single command line.
-
-https://user-images.githubusercontent.com/55318172/146631994-e1cac137-1664-4cfe-950b-a96decc1eaa6.mp4
-
-Check out the [expansion pack repository](https://github.com/theodorusclarence/expansion-pack) for the commands -->
+```shell
+npm run commit
+```
