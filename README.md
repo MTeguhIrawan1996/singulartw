@@ -1,4 +1,4 @@
-# Next.js + Mantine UI + TypeScript Starter and Boilerplate
+# Next.js + TailwindCss + TypeScript Starter and Boilerplate
 
 <div align="center">
   <h2>🔋 ts-nextjs-tailwindcss-starter</h2>
@@ -88,5 +88,5 @@ Open http://localhost:3000 with your favorite browser to see your project.
 The project enforces [Conventional Commits](https://www.conventionalcommits.org/) specification. This means that all your commit messages must be formatted according to the specification. To help you write commit messages, the project uses [Commitizen](https://github.com/commitizen/cz-cli), an interactive CLI that guides you through the commit process. To use it, run the following command:
 
 ```shell
-npm run commit
+npm run git:commit
 ```
