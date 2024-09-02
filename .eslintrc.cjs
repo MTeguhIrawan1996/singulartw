@@ -5,6 +5,7 @@ module.exports = {
     "plugin:@typescript-eslint/recommended",
     "prettier",
     "plugin:@next/next/recommended",
+    "plugin:tailwindcss/recommended",
     "next/core-web-vitals",
   ],
   ignorePatterns: [
@@ -92,6 +93,12 @@ module.exports = {
   //     extends: ['plugin:testing-library/react'],
   //   },
   // ],
+  overrides: [
+    {
+      files: ["*.ts", "*.tsx", "*.js"],
+      parser: "@typescript-eslint/parser",
+    },
+  ],
   parserOptions: {
     project: "./tsconfig.json",
   },
