@@ -6,6 +6,6 @@ module.exports = {
   siteUrl: `${process.env.NEXT_PUBLIC_BASE_URL}`,
   generateRobotsTxt: true,
   robotsTxtOptions: {
-    policies: [{ userAgent: '*', allow: '/' }],
+    policies: [{ userAgent: "*", allow: "/" }],
   },
 };

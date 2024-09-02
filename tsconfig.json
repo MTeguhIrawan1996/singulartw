@@ -1,50 +1,27 @@
-/* eslint-disable jsonc/sort-keys */
 {
   "compilerOptions": {
-    "incremental": true,
-    "target": "es2017",
-
+    "types": ["node"],
+    "target": "es5",
     "jsx": "preserve",
     "lib": ["dom", "dom.iterable", "esnext"],
-
-    // Path aliases
-    "baseUrl": ".",
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "esModuleInterop": true,
     "module": "esnext",
     "moduleResolution": "bundler",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "baseUrl": "./",
     "paths": {
       "@/*": ["./src/*"],
-      "~/*": ["./public/*"]
+      "~/*": ["./public/*"],
+      "@/components/*": ["./src/components/*"]
     },
-    "resolveJsonModule": true,
-    // Load types
-    "types": ["node"],
-    "allowJs": true,
-    "checkJs": true,
-    "strict": true,
-    "strictNullChecks": true,
-    "allowUnreachableCode": false,
-    "alwaysStrict": true,
-
-    "noFallthroughCasesInSwitch": true,
-    "noImplicitAny": true,
-    "noImplicitReturns": true,
-    "noImplicitThis": true,
-    "noUncheckedIndexedAccess": true,
-    "noUnusedLocals": true,
-    "noUnusedParameters": true,
-    "preserveConstEnums": true,
-    "removeComments": true,
-    "noEmit": true,
-    "outDir": "out",
-    "sourceMap": true,
-
-    "allowSyntheticDefaultImports": true,
-    "esModuleInterop": true,
-    "forceConsistentCasingInFileNames": true,
-    "isolatedModules": true,
-    "skipLibCheck": true,
-
-    // Editor support
+    "noImplicitAny": false,
+    "incremental": true,
     "plugins": [
       {
         "name": "next"
@@ -55,9 +32,12 @@
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx",
-    ".storybook/*.ts",
     ".next/types/**/*.ts",
-    "**/*.mts"
+    "src/env.ts"
   ],
-  "exclude": ["./out/**/*", "./node_modules/**/*"]
+  "exclude": ["node_modules"],
+  "moduleResolution": ["node_modules", ".next", "node"],
+  "rules": {
+    "@typescript-eslint/no-explicit-any": "on"
+  }
 }
