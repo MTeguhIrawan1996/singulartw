@@ -1,12 +1,12 @@
-import type { UserConfig } from "@commitlint/types";
+import type { UserConfig } from '@commitlint/types';
 
 const Configuration: UserConfig = {
-  extends: ["gitmoji"],
+  extends: ['gitmoji'],
   rules: {
-    "footer-leading-blank": [0],
-    "header-max-length": [0],
-    "subject-empty": [2, "never"],
-    "type-empty": [0, "never"],
+    'footer-leading-blank': [0],
+    'header-max-length': [0],
+    'subject-empty': [2, 'never'],
+    'type-empty': [0, 'never'],
   },
 };
 
