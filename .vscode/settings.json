@@ -2,10 +2,10 @@
   "css.validate": false,
   "editor.formatOnSave": true,
   "editor.tabSize": 2,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.codeActionsOnSave": {
     "source.fixAll": "explicit"
   },
-  "headwind.runOnSave": false,
   "typescript.preferences.importModuleSpecifier": "non-relative",
   "workbench.colorCustomizations": {
     "activityBar.activeBackground": "#243360",
@@ -25,6 +25,5 @@
     "titleBar.activeForeground": "#e7e7e7",
     "titleBar.inactiveBackground": "#24336099",
     "titleBar.inactiveForeground": "#e7e7e799"
-  },
-  "peacock.color": "3B1629"
+  }
 }
