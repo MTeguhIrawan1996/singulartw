@@ -22,6 +22,7 @@ Developer experience first, extremely flexible code structure and only keep what
 - ♻️ Type-safe environment variables with T3 Env
 - ⌨️ Form handling with React Hook Form
 - 🔴 Validation library with Zod
+- ⏲️ Date config with dayJs [Dayjs](https://day.js.org/en/)
 - 📏 Linter with [ESLint](https://eslint.org) (default Next.js, Next.js Core Web Vitals, Tailwind CSS and Airbnb configuration)
 - 💖 Code Formatter with [Prettier](https://prettier.io)
 - 🦊 Husky for Git Hooks
