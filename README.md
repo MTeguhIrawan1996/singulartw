@@ -4,11 +4,6 @@
   <h2>🔋 ts-nextjs-tailwindcss-starter</h2>
   <p>Next.js 14+, Tailwind Css, TypeScript starter packed with useful development features.</p>
   <p>Made by <a href="https://www.onedev.my.id/">OneDev</a></p>
-
-<!-- [![GitHub Repo stars](https://img.shields.io/github/stars/theodorusclarence/ts-nextjs-tailwind-starter)](https://github.com/theodorusclarence/ts-nextjs-tailwind-starter/stargazers)
-[![Depfu](https://badges.depfu.com/badges/fc6e730632ab9dacaf7df478a08684a7/overview.svg)](https://depfu.com/github/theodorusclarence/ts-nextjs-tailwind-starter?project_id=30160)
-[![Last Update](https://img.shields.io/badge/deps%20update-every%20sunday-blue.svg)](https://shields.io/) -->
-
 </div>
 
 ### Features
@@ -21,6 +16,7 @@ Developer experience first, extremely flexible code structure and only keep what
 - ✅ Strict Mode for TypeScript and React 18
 - ♻️ Type-safe environment variables with T3 Env
 - ⌨️ Form handling with React Hook Form
+- ❤️ API Services with [Tenstack Query](https://tanstack.com/query/latest/docs/framework/react/overview)
 - 🔴 Validation library with Zod
 - ⏲️ Date config with [Dayjs](https://day.js.org/en/)
 - 📏 Linter with [ESLint](https://eslint.org) (default Next.js, Next.js Core Web Vitals, Tailwind CSS and Airbnb configuration)
