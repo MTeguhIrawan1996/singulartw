@@ -77,16 +77,17 @@ Open http://localhost:3000 with your favorite browser to see your project.
  ┣ 📂lib
  ┃ ┣ 📜dayJsConfig.ts
  ┃ ┗ 📜utils.ts
- ┣ 📂services
+ ┣ 📂providers              # REACT QUERY PROVIDER ETC
+ ┣ 📂services               # API SERVICES AND AXIOS CONFIG
  ┣ 📂styles
  ┣ 📂types
  ┣ 📂utils
- ┃ ┣ 📂constans
+ ┃ ┣ 📂constans             # CONSTAN DATA
  ┃ ┣ 📂helpers
  ┃ ┃ ┗ 📜dateFormat.ts
  ┃ ┣ 📂hooks
  ┃ ┃ ┗ 📜useDebounce.tsx
- ┃ ┗ 📂validations
+ ┃ ┗ 📂validations          # VALIDATION CONFIG
  ┃ ┃ ┗ 📜common.ts
  ┗ 📜env.ts
 
