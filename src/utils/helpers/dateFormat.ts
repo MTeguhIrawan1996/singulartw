@@ -1,4 +1,4 @@
-import dayjs from '@/libs/dayJsConfig';
+import dayjs from '@/lib/dayJsConfig';
 
 export function dateFormat(
   value: string | Date | undefined | null,

@@ -55,12 +55,12 @@ module.exports = {
           ['^.+\\.s?css$'],
           // Lib and hooks
           ['^@/lib', '^@/hooks'],
-          // static data
-          ['^@/data'],
+          // utils
+          ['^@/utils'],
           // components
           ['^@/components', '^@/container'],
-          // zustand store
-          ['^@/store'],
+          // // zustand store
+          // ['^@/store'],
           // Other imports
           ['^@/'],
           // relative paths up until 3 level

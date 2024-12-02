@@ -63,20 +63,32 @@ Open http://localhost:3000 with your favorite browser to see your project.
 ### Project structure
 
 ```shell
-.
-├── README.md                       # README file
-├── .husky                          # Husky configuration
-├── .vscode                         # VSCode configuration
-├── public                          # Public assets folder
-├── src
-│   ├── app                         # Next JS App (App Router)
-│   ├── components                  # React components
-│   ├── libs                        # 3rd party libraries configuration
-│   ├── styles                      # Styles folder
-│   ├── types                       # Type definitions
-│   └── utils                       # Utilities folder
-├── tailwind.config.js              # Tailwind CSS configuration
-└── tsconfig.json                   # TypeScript configuration
+📦src
+ ┣ 📂app
+ ┃ ┣ 📜favicon.ico
+ ┃ ┣ 📜globals.css
+ ┃ ┣ 📜layout.tsx
+ ┃ ┗ 📜page.tsx
+ ┣ 📂components
+ ┃ ┣ 📂element
+ ┃ ┣ 📂layout
+ ┃ ┗ 📂ui
+ ┃ ┃ ┗ 📜button.tsx
+ ┣ 📂lib
+ ┃ ┣ 📜dayJsConfig.ts
+ ┃ ┗ 📜utils.ts
+ ┣ 📂services
+ ┣ 📂styles
+ ┣ 📂types
+ ┣ 📂utils
+ ┃ ┣ 📂constans
+ ┃ ┣ 📂helpers
+ ┃ ┃ ┗ 📜dateFormat.ts
+ ┃ ┣ 📂hooks
+ ┃ ┃ ┗ 📜useDebounce.tsx
+ ┃ ┗ 📂validations
+ ┃ ┃ ┗ 📜common.ts
+ ┗ 📜env.ts
 
 ```
 
