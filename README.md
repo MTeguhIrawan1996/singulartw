@@ -70,8 +70,8 @@ Open http://localhost:3000 with your favorite browser to see your project.
  ┃ ┣ 📜layout.tsx
  ┃ ┗ 📜page.tsx
  ┣ 📂components
- ┃ ┣ 📂element
- ┃ ┣ 📂layout
+ ┃ ┣ 📂elements
+ ┃ ┣ 📂layouts
  ┃ ┗ 📂ui
  ┃ ┃ ┗ 📜button.tsx
  ┣ 📂lib
