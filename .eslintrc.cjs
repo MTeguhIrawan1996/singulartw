@@ -16,8 +16,8 @@ module.exports = {
     '.eslintrc.cjs',
   ],
   rules: {
-    'no-unused-vars': 'off',
-    'no-console': 'warn',
+    'no-unused-vars': 'error',
+    'no-console': 'error',
     '@typescript-eslint/explicit-module-boundary-types': 'off',
     'react/no-unescaped-entities': 'off',
     'react/display-name': 'off',
@@ -60,7 +60,7 @@ module.exports = {
           // components
           ['^@/components', '^@/container'],
           // // zustand store
-          // ['^@/store'],
+          ['^@/store'],
           // Other imports
           ['^@/'],
           // relative paths up until 3 level
@@ -80,7 +80,7 @@ module.exports = {
         ],
       },
     ],
-    '@typescript-eslint/no-explicit-any': 'off',
+    '@typescript-eslint/no-explicit-any': 'warn',
     //#endregion  //*======== Import Sort ===========
   },
   globals: {
